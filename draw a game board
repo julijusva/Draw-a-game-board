@@ -1,0 +1,17 @@
+size = int(raw_input("Size of a board?"))
+
+def print_horiz_line():
+    print ("---" * size)
+
+def print_vert_line():
+    print("|   " * size)
+
+def print_board(board_size):
+    for i in range(board_size):
+        print_horiz_line()
+        print_vert_line()
+    print_horiz_line()
+
+
+print_board(size)
+
